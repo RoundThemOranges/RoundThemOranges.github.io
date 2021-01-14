@@ -191,7 +191,7 @@
 
     this.setGameInstance(gameInstance);
 
-    this.enterXRButton.disabled = true;
+    // this.enterXRButton.disabled = true;
 
     this.gameInstance.SendMessage(
       this.unityObjectName,
