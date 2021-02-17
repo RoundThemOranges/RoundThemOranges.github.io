@@ -180,7 +180,7 @@
 
     this.setGameInstance(gameInstance);
     
-    // this.enterXRButton.disabled = !this.isVRSupported;
+    this.enterXRButton.disabled = !this.isVRSupported;
 
     this.gameInstance.SendMessage(
       this.unityObjectName, 'OnXRCapabilities',
