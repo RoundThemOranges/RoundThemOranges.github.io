@@ -1,7 +1,7 @@
 {
 "companyName": "AgrMayank",
-"productName": "ArtGalleryWeb",
-"productVersion": "0.1",
+"productName": "RTO Art Gallery",
+"productVersion": "1.0",
 "dataUrl": "ArtWebXR.data.unityweb",
 "wasmCodeUrl": "ArtWebXR.wasm.code.unityweb",
 "wasmFrameworkUrl": "ArtWebXR.wasm.framework.unityweb",
