@@ -447,19 +447,19 @@
   };
 
   // Show instruction dialogue for non-VR enabled browsers.
-  XRManager.prototype.displayElement = function (el) {
-    if (el.dataset.enabled) {
-      return;
-    }
-    var confirmButton = el.querySelector("button");
-    el.dataset.enabled = true;
+  // XRManager.prototype.displayElement = function (el) {
+  //   if (el.dataset.enabled) {
+  //     return;
+  //   }
+  //   var confirmButton = el.querySelector("button");
+  //   el.dataset.enabled = true;
 
-    function onConfirm() {
-      el.dataset.enabled = false;
-      confirmButton.removeEventListener("click", onConfirm);
-    }
-    confirmButton.addEventListener("click", onConfirm);
-  };
+  //   function onConfirm() {
+  //     el.dataset.enabled = false;
+  //     confirmButton.removeEventListener("click", onConfirm);
+  //   }
+  //   confirmButton.addEventListener("click", onConfirm);
+  // };
 
   function initWebXRManager() {
     var xrManager = (window.xrManager = new XRManager());
