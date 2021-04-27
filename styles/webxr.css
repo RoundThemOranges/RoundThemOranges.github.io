@@ -28,6 +28,11 @@ a:visited {
 
 #loader {
   background: #ffffff;
+  height: auto;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 [data-unity-loaded="true"] #loader {
@@ -36,33 +41,22 @@ a:visited {
 
 #progress {
   bottom: 0;
-  height: 32px;
+  height: 40px;
   position: absolute;
   width: 0;
 }
 
 .loading {
-  align-items: center;
   color: #fff;
-  display: flex;
   font-size: 40px;
   font-weight: light;
-  height: 100%;
-  justify-content: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .loadingIcon {
-  align-items: center;
-  color: #fff;
-  display: flex;
-  font-size: 40px;
-  /* padding-bottom: 32px; */
-  /* padding-top: 32px; */
-  font-weight: light;
-  height: 100%;
-  justify-content: center;
-
-  /* position: absolute; */
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 /* loading dots */
