@@ -36,7 +36,7 @@ a:visited {
 
 #progress {
   bottom: 0;
-  height: 40px;
+  height: 48px;
   position: absolute;
   width: 0;
 }
@@ -45,16 +45,16 @@ a:visited {
   display: flex;
   justify-content: center;
   color: #1f1f1f;
-  font-size: 40px;
-  font-weight: light;
+  font-size: 48px;
+  font-weight: bold;
   text-align: center;
 }
 
 .loadingIcon {
   display: flex;
   justify-content: center;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 64px;
+  padding-bottom: 32px;
   height: 256px;
 }
 
@@ -138,7 +138,7 @@ a:visited {
 #progress,
 #enterxr:hover,
 #instruction button {
-  background-color: #198efb;
+  background-color: #4d349e;
 }
 
 #instruction {
