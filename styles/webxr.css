@@ -27,9 +27,7 @@ a:visited {
 }
 
 #loader {
-  background: #ffffff;
-  display: flex;
-  justify-content: center;
+  background: #f1f1f1;
 }
 
 [data-unity-loaded="true"] #loader {
@@ -44,14 +42,17 @@ a:visited {
 }
 
 .loading {
+  display: flex;
+  justify-content: center;
   color: #1f1f1f;
   font-size: 40px;
   font-weight: light;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  text-align: center;
 }
 
 .loadingIcon {
+  display: flex;
+  justify-content: center;
   padding-top: 16px;
   padding-bottom: 16px;
   height: 256px;
