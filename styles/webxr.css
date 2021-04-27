@@ -46,6 +46,16 @@ a:visited {
   color: #fff;
   display: flex;
   font-size: 40px;
+  font-weight: light;
+  height: 100%;
+  justify-content: center;
+}
+
+.loadingIcon {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  font-size: 40px;
   /* padding-bottom: 32px; */
   /* padding-top: 32px; */
   font-weight: light;
@@ -53,7 +63,6 @@ a:visited {
   justify-content: center;
 
   /* position: absolute; */
-  top: 0;
 }
 
 /* loading dots */
