@@ -28,11 +28,8 @@ a:visited {
 
 #loader {
   background: #ffffff;
-  height: auto;
-  width: auto;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 [data-unity-loaded="true"] #loader {
