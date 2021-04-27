@@ -46,15 +46,16 @@ a:visited {
   justify-content: center;
   color: #1f1f1f;
   font-size: 48px;
-  font-weight: bold;
+  font-weight: normal;
+  font-style: italic;
   text-align: center;
 }
 
 .loadingIcon {
   display: flex;
   justify-content: center;
-  padding-top: 64px;
-  padding-bottom: 32px;
+  padding-top: 96px;
+  padding-bottom: 64px;
   height: 256px;
 }
 
