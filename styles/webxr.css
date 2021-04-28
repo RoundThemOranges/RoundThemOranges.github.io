@@ -13,12 +13,12 @@ html,
 body,
 #canvas,
 #loader {
-  height: auto;
+  height: 100%;
   left: 0;
   margin: 0;
   padding: 0;
   top: 0;
-  width: auto;
+  width: 100%;
 }
 
 a:link,
@@ -56,8 +56,8 @@ a:visited {
   justify-content: center;
   padding-top: 96px;
   padding-bottom: 64px;
-  height: 256px;
-  width: auto;
+  max-height: 256px;
+  max-width: auto;
   overflow: hidden;
   object-fit: cover;
 }
