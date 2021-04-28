@@ -56,8 +56,8 @@ a:visited {
   justify-content: center;
   padding-top: 96px;
   padding-bottom: 64px;
-  max-height: 256px;
-  max-width: auto;
+  height: 256px;
+  width: auto;
   overflow: hidden;
   object-fit: cover;
 }
