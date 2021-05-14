@@ -1,18 +1,13 @@
-html,
-body {
+html, body {
   background-color: #000;
-  font-size: 1px;
+  font-size: 16px;
   overflow: hidden;
   /* NOTE: Don't use `-apple-system` at the head of a shorthand font declaration.
      See https://booking.design/implementing-system-fonts-on-booking-com-a-lesson-learned-bdc984df627f for more info. */
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-html,
-body,
-#canvas,
-#loader {
+html, body, #canvas, #loader {
   height: 100%;
   left: 0;
   margin: 0;
@@ -21,69 +16,63 @@ body,
   width: 100%;
 }
 
-a:link,
-a:visited {
-  color: #198efb;
+a:link, a:visited {
+  color: #198EFB;
 }
 
 #loader {
-  background: #f1f1f1;
+  background: #2C3146;
 }
 
-[data-unity-loaded="true"] #loader {
+[data-unity-loaded='true'] #loader {
   display: none;
 }
 
 #progress {
   bottom: 0;
-  height: 48px;
+  height: 80px;
   position: absolute;
   width: 0;
 }
 
 .loading {
+  align-items: center;
+  color: #fff;
   display: flex;
+  font-size: 50px;
+  font-weight: light;
+  height: 100%;
   justify-content: center;
-  color: #1f1f1f;
-  font-size: 48px;
-  font-weight: normal;
-  font-style: italic;
-  text-align: center;
-}
-
-.loadingIcon {
-  display: flex;
-  justify-content: center;
-  padding-top: 96px;
-  padding-bottom: 64px;
-  height: 256px;
-  width: auto;
-  overflow: hidden;
-  object-fit: cover;
 }
 
 /* loading dots */
 .loading:after {
-  content: " .";
+  content: ' .';
   animation: dots 2s steps(5, end) infinite;
 }
 
 @keyframes dots {
-  0%,
-  20% {
-    color: rgba(0, 0, 0, 0);
-    text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0);
+  0%, 20% {
+    color: rgba(0,0,0,0);
+    text-shadow:
+      .25em 0 0 rgba(0,0,0,0),
+      .5em 0 0 rgba(0,0,0,0);
   }
   40% {
     color: #fff;
-    text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0);
+    text-shadow:
+      .25em 0 0 rgba(0,0,0,0),
+      .5em 0 0 rgba(0,0,0,0);
   }
   60% {
-    text-shadow: 0.25em 0 0 #fff, 0.5em 0 0 rgba(0, 0, 0, 0);
+    text-shadow:
+      .25em 0 0 #fff,
+      .5em 0 0 rgba(0,0,0,0);
   }
-  80%,
-  100% {
-    text-shadow: 0.25em 0 0 #fff, 0.5em 0 0 #fff;
+  80%, 100% {
+    text-shadow:
+      .25em 0 0 #fff,
+      .5em 0 0 #fff;
   }
 }
 
@@ -100,7 +89,7 @@ a:visited {
   padding: 10px;
 }
 
-#performance[data-enabled="true"] {
+#performance[data-enabled='true'] {
   display: block;
   position: absolute;
   left: 30px;
@@ -110,11 +99,11 @@ a:visited {
   background: #000;
 }
 
-#performance[data-enabled="false"] {
+#performance[data-enabled='false'] {
   display: none;
 }
 
-[data-unity-loaded="true"] #status[data-enabled="true"] {
+[data-unity-loaded='true'] #status[data-enabled='true'] {
   display: block;
 }
 
@@ -135,14 +124,14 @@ a:visited {
   cursor: pointer;
 }
 
-[data-unity-loaded="true"] #enterxr[data-enabled="true"] {
+[data-unity-loaded='true'] #enterxr[data-enabled='true'] {
   display: block;
 }
 
 #progress,
 #enterxr:hover,
 #instruction button {
-  background-color: #4d349e;
+  background-color: #198EFB;
 }
 
 #instruction {
@@ -176,7 +165,7 @@ a:visited {
   pointer-events: all;
 }
 
-.panel[data-enabled="true"] {
+.panel[data-enabled='true'] {
   display: block;
 }
 
