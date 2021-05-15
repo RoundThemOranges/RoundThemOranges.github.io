@@ -1,0 +1,29 @@
+/* Your custom styles */
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #b98bbc;
+    min-height: 100%;
+}
+.add-border-white {
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    display: inline;
+}
+.section-01, .section-02, .section-03 {
+    margin-top: 50px;
+}
+@media screen and (max-width: 480px) {
+    .add-border-white {
+        display: block;
+    }
+    a.on-center img {
+        text-align: center;
+        margin: 0 auto;
+    }
+}
