@@ -1,59 +1,80 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>RTO</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="bootstrap/css/font-awesome-5.8.1.css">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="bootstrap/css/mdb.css">
-    <link rel="stylesheet" href="bootstrap/css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="bootstrap/css/font-awesome-5.8.1.css" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="bootstrap/css/mdb.css" />
+    <link rel="stylesheet" href="bootstrap/css/style.css" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0SPFK4C8V9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-0SPFK4C8V9"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-0SPFK4C8V9');
-</script>
-</head>
-<body id="element1">
-
+      gtag("config", "G-0SPFK4C8V9");
+    </script>
+  </head>
+  <body id="element1">
     <div class="section-01 container">
-        <div class="row">
-            <div class="col">
-                <p class="text-white add-border-white">A world controlled by eyes that navigate in the past is nothing but reality as an after image. </p>
-            </div>
+      <div class="row">
+        <div class="col">
+          <p class="text-white add-border-white">
+            A world controlled by eyes that navigate in the past is nothing but
+            reality as an after image.
+          </p>
         </div>
+      </div>
     </div>
 
     <div class="section-02 container">
-        <div class="row row-eq-height">
-            <div class="col-md-5 my-auto">
-                <img src="assets/images/enter-gallery.png" class="img-fluid mb-2">
-                <a href="https://roundthemoranges.com/ArtGallery/" id="" class="on-center">
-                    <img src="assets/images/right-arrow.png" class="img-fluid float-md-right">
-                </a>
-            </div>
-            <div class="col-md-7 my-auto">
-                    <img src="assets/images/trouble.png" class="img-fluid">
-            </div>
+      <div class="row row-eq-height">
+        <div class="col-md-5 my-auto">
+          <img src="assets/images/enter-gallery.png" class="img-fluid mb-2" />
+          <a
+            href="https://roundthemoranges.com/ArtGallery/"
+            id=""
+            class="on-center"
+          >
+            <img
+              src="assets/images/right-arrow.png"
+              class="img-fluid float-md-right"
+            />
+          </a>
         </div>
+        <div class="col-md-7 my-auto">
+          <img src="assets/images/trouble.png" class="img-fluid" />
+        </div>
+      </div>
     </div>
 
     <div class="section-03 container">
-        <div class="row">
-            <div class="col">
-                <p class="text-right text-black">Round them Oranges</p>
-            </div>
+      <div class="row">
+        <div class="col">
+          <p class="text-right text-black">Round them Oranges</p>
         </div>
+      </div>
     </div>
 
-<!-- Scripts -->
+    <!-- Scripts -->
     <script src="bootstrap/js/jquery-3.3.1.min.js"></script>
     <script src="bootstrap/js/popper.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
@@ -62,32 +83,31 @@
     <script src="assets/js/loadingoverlay.min.js"></script>
     <script src="assets/js/loadingoverlay_progress.min.js"></script>
     <script>
-        $(document).ready(function(){
-            $("#progress_test").on("click", function Example1(event){
-                /***** Element 1 *****/
-                    // Initialize Progress and show LoadingOverlay
-                var progress1 = new LoadingOverlayProgress();
-                $("#element1").LoadingOverlay("show", {
-                    custom  : progress1.Init()
-                });
-                // Simulate some action:
-                var count1  = 0;
-                var iid1	= setInterval(function(){
-                    if (count1 >= 100) {
-                        clearInterval(iid1);
-                        delete progress1;
-                        $("#element1").LoadingOverlay("hide");
-                        //window.location.replace("https://www.google.com/");
-                        window.location.href = "https://www.google.com/";
-                        return;
-                    }
-                    count1++;
-                    progress1.Update(count1);
-                }, 100);
-                /*********************/
-
-            });
+      $(document).ready(function () {
+        $("#progress_test").on("click", function Example1(event) {
+          /***** Element 1 *****/
+          // Initialize Progress and show LoadingOverlay
+          var progress1 = new LoadingOverlayProgress();
+          $("#element1").LoadingOverlay("show", {
+            custom: progress1.Init(),
+          });
+          // Simulate some action:
+          var count1 = 0;
+          var iid1 = setInterval(function () {
+            if (count1 >= 100) {
+              clearInterval(iid1);
+              delete progress1;
+              $("#element1").LoadingOverlay("hide");
+              //window.location.replace("https://www.google.com/");
+              window.location.href = "https://www.google.com/";
+              return;
+            }
+            count1++;
+            progress1.Update(count1);
+          }, 100);
+          /*********************/
         });
+      });
     </script>
-</body>
+  </body>
 </html>

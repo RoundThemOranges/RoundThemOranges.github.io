@@ -28,12 +28,7 @@
       "purpose": "Animation of WebXR game exported from Unity"
     }
   ],
-  "categories": [
-    "games",
-    "unity",
-    "webxr",
-    "unity-webxr"
-  ],
+  "categories": ["games", "unity", "webxr", "unity-webxr"],
   "xr_available_platforms": [
     {
       "platform": "windows",
@@ -45,9 +40,6 @@
     }
   ],
   "xr_default_device": "htc_vive",
-  "xr_available_devices": [
-    "htc_vive",
-    "oculus_rift"
-  ],
+  "xr_available_devices": ["htc_vive", "oculus_rift"],
   "unity_webvr_player_version": "1.3.0"
 }
